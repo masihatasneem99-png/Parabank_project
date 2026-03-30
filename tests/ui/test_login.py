@@ -5,6 +5,6 @@ def test_valid_login(driver):
 
     login = LoginPage(driver)
 
-    login.login("Masiha", "1234")
+    login.login("john", "demo")
 
     assert "overview" in driver.current_url

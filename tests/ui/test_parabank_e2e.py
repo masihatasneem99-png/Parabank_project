@@ -15,7 +15,7 @@ def test_parabank_e2e_flow(driver):
 
     transfer = TransferFundsPage(driver)
     transfer.open_transfer()
-    transfer.transfer_money("100", "13344", "13344")
+    transfer.transfer_money("100", "12345", "12345")
     take_screenshot(driver, "fund transfer")
     assert "Transfer Complete" in transfer.transfer_success()
 
