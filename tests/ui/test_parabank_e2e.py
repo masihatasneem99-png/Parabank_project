@@ -11,6 +11,7 @@ def test_parabank_e2e_flow(driver):
     login.login("john", "demo")
 
     overview = AccountOverviewPage(driver)
+    take_screenshot(driver, "e2e_login")
     assert overview.verify_accounts_loaded()
 
     transfer = TransferFundsPage(driver)
